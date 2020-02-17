@@ -4,9 +4,19 @@ public class Application {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        String operation = scanner.nextLine();
 
-        System.out.println(a + b);
+        if (operation.equals("sum")) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+
+            System.out.println(a + b);
+
+        } else if (operation.equals("mul")) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+
+            System.out.println(a * b);
+        }
     }
 }
